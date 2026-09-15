@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & Experiences — Where Journeys Become Stories</title>
+  <meta name="description" content="Discover destinations, travel experiences, and personal journey stories from travelers around the world.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="stylesheet" href="/src/styles/design-system.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header-nav">
+    <a href="#" class="brand-logo" id="brand-home-link">
+      <div class="brand-logo-mark">T</div>
+      <div>
+        <div class="brand-title">Travel & Experiences</div>
+        <div class="brand-tagline">Where Journeys Become Stories</div>
+      </div>
+    </a>
+
+    <!-- Global Search Bar Dashboard -->
+    <div class="search-container">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="global-search-input" class="search-input" placeholder="Search places, experience (e.g. Coorg, Beach, Nature)..." aria-label="Search places and experiences">
+    </div>
+
+    <!-- Actions & User Controls -->
+    <nav class="nav-actions">
+      <button class="btn btn-secondary" id="btn-create-story" style="display: none;">✍️ Write Story</button>
+      <button class="btn btn-secondary" id="btn-profile" style="display: none;">👤 Scrapbook</button>
+      <button class="btn btn-primary" id="btn-auth">Sign In</button>
+    </nav>
+  </header>
+
+  <!-- Dynamic Application Root -->
+  <main class="main-content" id="app-root">
+    <!-- Rendered dynamically by JavaScript router/view engine -->
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <div class="footer-brand">Travel & Experiences</div>
+        <p class="footer-text">An editorial travel magazine, digital scrapbook, and destination discovery platform connecting places, experiences, and authentic stories.</p>
+      </div>
+      <div>
+        <div class="footer-title">Experiences</div>
+        <ul class="footer-links">
+          <li><a href="#" data-exp="Nature" class="footer-exp-link">Nature</a></li>
+          <li><a href="#" data-exp="Adventure" class="footer-exp-link">Adventure</a></li>
+          <li><a href="#" data-exp="Beach" class="footer-exp-link">Beach</a></li>
+          <li><a href="#" data-exp="Food" class="footer-exp-link">Food</a></li>
+          <li><a href="#" data-exp="Hidden Places" class="footer-exp-link">Hidden Places</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Top Locations</div>
+        <ul class="footer-links">
+          <li><a href="#" data-loc="Madikeri" class="footer-loc-link">Madikeri (Coorg)</a></li>
+          <li><a href="#" data-loc="Hampi" class="footer-loc-link">Hampi</a></li>
+          <li><a href="#" data-loc="Goa" class="footer-loc-link">Goa</a></li>
+          <li><a href="#" data-loc="Manali" class="footer-loc-link">Manali</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Travel & Experiences Platform. All rights reserved. Editorial content curated by global travelers.
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Modal Container for Auth / Dialogs -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div id="modal-container" class="modal-container">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
