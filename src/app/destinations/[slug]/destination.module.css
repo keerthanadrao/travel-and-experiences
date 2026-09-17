@@ -1,0 +1,119 @@
+.hero {
+  position: relative;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 0%, rgba(31, 58, 50, 0.85) 100%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 2.5rem;
+  color: var(--color-warm-ivory);
+}
+
+.locationBadge {
+  background: var(--color-terracotta);
+  color: var(--color-warm-ivory);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--color-warm-ivory);
+  margin: 0.4rem 0;
+}
+
+.description {
+  font-family: var(--font-editorial);
+  font-size: 1.1rem;
+  color: var(--color-sand-beige);
+  max-width: 700px;
+}
+
+.gallerySection {
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.sectionSubtitle {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.horizontalSnapGallery {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallerySlide {
+  flex: 0 0 85%;
+  max-width: 720px;
+  height: 420px;
+  scroll-snap-align: center;
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.slideImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photoCounter {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(31, 58, 50, 0.8);
+  color: white;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.journeysSection {
+  padding: 2rem 1.5rem 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.8rem;
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  .gallerySlide {
+    flex: 0 0 95%;
+    height: 280px;
+  }
+}

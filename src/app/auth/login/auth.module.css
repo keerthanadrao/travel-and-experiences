@@ -1,0 +1,136 @@
+.authWrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-canvas);
+  padding: 2rem 1rem;
+}
+
+.authCard {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.brandTitle {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--color-forest-green);
+}
+
+.tagline {
+  font-family: var(--font-editorial);
+  font-size: 0.85rem;
+  color: var(--color-terracotta);
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.fieldGroup {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.fieldGroup label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-forest-green);
+  margin-bottom: 0.4rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-canvas);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-terracotta);
+}
+
+.forgotLinkWrapper {
+  text-align: right;
+  margin-bottom: 1.2rem;
+}
+
+.forgotLink {
+  font-size: 0.8rem;
+  color: var(--color-terracotta);
+  font-weight: 600;
+}
+
+.submitBtn {
+  width: 100%;
+  background: var(--color-forest-green);
+  color: var(--color-warm-ivory);
+  border: none;
+  padding: 0.8rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.submitBtn:hover {
+  background: #152923;
+}
+
+.footerLink {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.footerLink a {
+  color: var(--color-terracotta);
+  font-weight: 700;
+}
+
+.errorAlert {
+  background: var(--color-error);
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.successAlert {
+  background: var(--color-success);
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.cooldownText {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 0.8rem;
+}
+
+.resendBtn {
+  background: none;
+  border: none;
+  color: var(--color-terracotta);
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 0.8rem;
+}

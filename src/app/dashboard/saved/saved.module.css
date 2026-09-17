@@ -1,0 +1,35 @@
+.wrapper {
+  padding: 3rem 1.5rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.8rem;
+}
+
+.emptyBox {
+  background: var(--color-card-bg);
+  border: 1px dashed var(--color-border);
+  padding: 3rem;
+  text-align: center;
+  border-radius: var(--radius-md);
+}
+
+.emptyBox h2 {
+  margin-bottom: 0.5rem;
+}
+
+.emptyBox p {
+  color: var(--color-text-muted);
+}

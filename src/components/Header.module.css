@@ -1,0 +1,245 @@
+.header {
+  background-color: var(--color-forest-green);
+  color: var(--color-text-light);
+  border-bottom: 1px solid rgba(232, 221, 200, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 0;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-warm-ivory);
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-family: var(--font-editorial);
+  font-size: 0.75rem;
+  color: var(--color-sand-beige);
+  font-style: italic;
+  margin-top: -2px;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  background-color: rgba(248, 245, 237, 0.12);
+  border: 1px solid rgba(232, 221, 200, 0.3);
+  border-radius: var(--radius-full);
+  padding: 0.3rem 0.8rem;
+  width: 320px;
+}
+
+.searchInput {
+  background: transparent;
+  border: none;
+  color: var(--color-warm-ivory);
+  width: 100%;
+  padding: 0.2rem 0.4rem;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: rgba(232, 221, 200, 0.6);
+}
+
+.searchBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.navLink {
+  color: var(--color-sand-beige);
+  font-weight: 500;
+  font-size: 0.92rem;
+  transition: color var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--color-terracotta);
+}
+
+.authNavBtns {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.loginBtn {
+  color: var(--color-warm-ivory);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.signupBtn {
+  background-color: var(--color-terracotta);
+  color: var(--color-warm-ivory);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.88rem;
+  transition: transform var(--transition-fast);
+}
+
+.signupBtn:hover {
+  transform: translateY(-2px);
+}
+
+.userProfileWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.createBtn {
+  background-color: var(--color-sand-beige);
+  color: var(--color-forest-green);
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.drawerToggleBtn {
+  background: transparent;
+  border: 1px solid var(--color-sand-beige);
+  color: var(--color-warm-ivory);
+  font-size: 1.2rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Drawer CSS */
+.drawerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 200;
+}
+
+.drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-bg-canvas);
+  color: var(--color-text-body);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.8rem;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.userInfoBlock {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.userName {
+  font-weight: 700;
+  color: var(--color-forest-green);
+}
+
+.userHandle {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.adminBadge {
+  background: var(--color-terracotta);
+  color: white;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.drawerMenu {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.drawerMenu a {
+  font-weight: 600;
+  color: var(--color-forest-green);
+  display: block;
+  padding: 0.4rem 0;
+}
+
+.adminMenuLink {
+  color: var(--color-terracotta) !important;
+}
+
+.logoutItem {
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+}
+
+.logoutBtn {
+  background: var(--color-error);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .searchForm {
+    display: none;
+  }
+}
